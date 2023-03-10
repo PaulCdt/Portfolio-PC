@@ -1,0 +1,37 @@
+<div class="text-center pt-3 pb-2">
+
+    <h2 class="my-4">Accueil</h2>
+
+</div>
+
+
+<?php if(isConnected() == false): ?>
+
+<div class="text-center pt-3 pb-2" >
+
+    <h3 class="my-4">Veuillez créer un compte et vous connecter pour accèder à mon portfolio et/ou m'envoyer un message !</h3>
+
+    <p class="my-4"> Ou utilisez ce compte factice : "user@example.com" avec comme mot de passe "randompassword" </p>
+
+</div>
+
+<div class="text-center pt-3 pb-2">
+    <p>Il s'agit de vous montrer une de mes compétences par l'exemple, mais si vous ne souhaitez pas le faire, veuillez cliquer sur ce bouton à la place.</p>
+    <a href="/portfolio" class="btn btn-secondary mx-1 margin-left">
+        <i class="fa-solid fa-code"></i>
+        Mon portfolio
+    </a>
+</div>
+
+   
+
+<?php endif; ?>
+
+
+<!-- Affichage du message flash le cas échéant -->
+<?php if ($flashMessage): ?>
+
+    <div class="alert alert-success text-center pt-3 pb-4"><?=htmlspecialchars($flashMessage);?></div>
+
+<?php endif; ?>
+

@@ -1,0 +1,31 @@
+
+<?php if ($userFirstname != null): ?>
+    <div class="alert alert-success text-center pt-3 pb-4 mt-3"><?=htmlspecialchars('Bonjour '.$userFirstname);?></div>
+    <?php else: ?>
+    <div><p class="alert alert-success text-center pt-3 pb-4 mt-3">Bonjour</p></div>
+<?php endif; ?>
+<div id="portfolio-container" class="d-flex">
+
+    <div id="child1" class="d-flex margin-left flex-direction-column mw-custom justify-content-center mt-100 gap-5">
+            
+        <a id="portfolio1-btn" href="/portfolio-static" class="btn btn-secondary mx-1 button-56">
+            <p>Portfolio statique</p>
+        </a>
+
+        <p id="portfolio1" class="closer d-flex justify-content-center">Version plus classique</p>
+    </div>
+
+
+    <div id="child2" class="d-flex margin-left flex-direction-column mw-custom justify-content-center mt-100 gap-5">
+        
+        <a id="portfolio2-btn" href="/portfolio-interactive" class="btn btn-secondary mx-1 button-56">
+            <p>Portfolio interactif</p>
+        </a>
+
+        <p id="portfolio2" class="closer d-flex justify-content-center">Montrer mes compétences par l'exemple</p>
+    </div>
+    
+
+</div>
+
+<p class="text-align-center alert alert-danger">Le portfolio interactif en cours de création, il sera disponible dans une version ultérieure du site, merci pour votre compréhension</p>
